@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>project1</title>
+</head>
+
+<body>
+    <header style="background-color: white;">
+        <a href="https://www.linkedin.com/company/inokri-solutions/?trk=ppro_cprof&fbclid=IwAR1RC8nw7xfZ2DO9bXCKpuL5mmetSzYbDJ5d26M3Z14W7KBMUBBJHwd9iwg&originalSubdomain=ao" target="_blanc"><img src="/inokri.png"></a>
+        
+        <nav align = "right">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Sig in</a>
+        </nav>
+    </header>
+    <h1  align = "center">Calculate</h1>
+    <div class = "screen">
+        <div class="screen2">
+            <input type="text" placeholder="Insert val1" class="n1">
+            <input type="text" placeholder="Insert val2" class="n2">
+            <link rel="stylesheet" href="/project1/style.css">
+            <button onclick="calc()">Calculate</button>
+            
+            <div align = "center">
+                
+                <p class="s"></p>
+                <p class="sb"></p>
+                <p class="m"></p>
+                <p class="d"></p>
+            </div>
+            
+        </div>
+        
+    </div>
+    <script>
+        
+        function calc() {
+            var n1 = document.querySelector(".n1").value;
+            var n2 = document.querySelector(".n2").value;
+
+            var s = Number(n1) + Number(n2)
+            var r = document.querySelector(".s").innerHTML = "Soma: "+s;
+            
+            var sb = Number(n1) - Number(n2)
+            var sub = document.querySelector(".sb").innerHTML = "Subtração: "+sb;
+
+            var m = Number(n1) * Number(n2)
+            var mult = document.querySelector(".m").innerHTML =`Multiplicação: ${m} ` ;
+
+            var d = Number(n1) * Number(n2)
+            var div = document.querySelector(".d").innerHTML = `Divisão: ${d} `;
+            
+        }
+
+       
+    </script>
+</body>
+
+</html>
