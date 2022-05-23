@@ -1,3 +1,7 @@
+.screen{
+    margin :0;
+    padding: 0;
+}
 body{
     margin :0;
     background-color: rgb(23, 86, 116);
@@ -18,28 +22,21 @@ a{
     
 
 }
-/* div>div>input{
-    box-shadow: 0px 10px 40px;
-}
-button{
-    box-shadow: 0px 10px 40px;
-} */
+
 .screen{
-    width: 100vw;
-    margin: 10px;
-    padding: 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    /* flex-direction: column; */
     
 }
+
 .screen input{
     margin: 10px;
     padding: 10px;
     border: none;
     outline: none;
     border-radius: 8px;
-    
+  
 }
 .screen button{
     
@@ -50,10 +47,43 @@ button{
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    background: linear-gradient(35deg,rgb(13, 138, 160),rgb(40, 241, 255));
+    box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.548);
+    color: rgb(245, 245, 245);
+}
+button:hover{
+    background: linear-gradient(35deg,rgb(13, 138, 160),rgb(19, 190, 202));
+}
+button:active{
+    background: linear-gradient(35deg,rgb(13, 138, 160),rgb(40, 241, 255));
 }
 .screen2{
     padding: 10px;
     border-radius: 23px;
     background-color: rgb(47, 133, 145);
     box-shadow: 0px 10px 40px rgb(21, 54, 58);
+}
+.val{
+    display:flex;
+}
+.resultados_Calc{
+    text-align: center;
+    
+}
+@media screen and (max-width:993px) {
+    .screen2{
+        width: 80vw;
+    }
+    .val{
+        flex-direction: column;
+    }
+    button{
+        width: 5cm;
+        background: linear-gradient(35deg,rgb(13, 138, 160),rgb(40, 241, 255));
+        color: white;
+        box-shadow: 6px 0px 10px rgba(0, 0, 0, 0.548);
+    }
+    .resultados_Calc{
+        transition: all 30s ease-out;
+    }
 }
